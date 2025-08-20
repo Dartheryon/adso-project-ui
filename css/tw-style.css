@@ -8,6 +8,8 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-600: oklch(57.7% 0.245 27.325);
+    --color-emerald-600: oklch(59.6% 0.145 163.225);
+    --color-blue-600: oklch(54.6% 0.245 262.881);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -179,6 +181,12 @@
   }
   .text-center {
     text-align: center;
+  }
+  .text-blue-600 {
+    color: var(--color-blue-600);
+  }
+  .text-emerald-600 {
+    color: var(--color-emerald-600);
   }
   .text-red-600 {
     color: var(--color-red-600);
