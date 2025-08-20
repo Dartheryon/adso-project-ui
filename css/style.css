@@ -1,1 +1,16 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+@theme {
+  --color-soul-bg: #FCFBFC;
+  --color-soul-primary: #00635D;
+  --color-soul-secondary: #08A4BD;
+  --color-text-base: #141414;
+
+  --color-border-default: #CFCFCF;
+  --color-error: #E63946;
+  
+  --font-ui: 'Inter', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
+
+  --border-radius-default: 8px;
+}

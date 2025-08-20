@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>✨ Soul / UI - Formulario de Propiedad</title>
+    <link rel="stylesheet" href="../css/tw-style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-soul-bg font-sans text-text-base">
+    <div class="w-full max-w-lg mx-auto p-6">
+      <h1
+        class="text-center font-heading font-bold text-2xl uppercase tracking-widest text-soul-primary my-6"
+      >
+        Formulario de Propiedad
+      </h1>
+
+      <div class="bg-white rounded-md shadow-sm p-8">
+        <form action="#" method="POST" class="space-y-6">
+          <div>
+            <label
+              for="property-name"
+              class="block text-sm font-medium text-gray-700 mb-1"
+              >Nombre Propiedad:</label
+            >
+            <input
+              type="text"
+              id="property-name"
+              class="w-full px-4 py-2 bg-transparent border border-border-default rounded-md transition-colors duration-200 hover:border-soul-secondary focus:outline-none focus:border-soul-primary focus:ring-2 focus:ring-soul-primary/30"
+            />
+          </div>
+
+          <div>
+            <label
+              for="address"
+              class="block text-sm font-medium text-gray-700 mb-1"
+              >Dirección:</label
+            >
+            <input
+              type="text"
+              id="address"
+              class="w-full px-4 py-2 bg-transparent border border-border-default rounded-md transition-colors duration-200 hover:border-soul-secondary focus:outline-none focus:border-soul-primary focus:ring-2 focus:ring-soul-primary/30"
+            />
+          </div>
+
+          <div class="grid grid-cols-2 gap-x-6 gap-y-6">
+            <div>
+              <label
+                for="type"
+                class="block text-sm font-medium text-gray-700 mb-1"
+                >Tipo</label
+              >
+              <div class="relative">
+                <select
+                  id="type"
+                  class="w-full appearance-none px-4 py-2 pr-8 bg-transparent border border-border-default rounded-md transition-colors duration-200 hover:border-soul-secondary focus:outline-none focus:border-soul-primary focus:ring-2 focus:ring-soul-primary/30"
+                >
+                  <option>Casa</option>
+                  <option>Apartamento</option>
+                  <option>Cabaña</option>
+                  <option>Glamping</option>
+                </select>
+                <div
+                  class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
+                >
+                  <svg
+                    class="fill-current h-4 w-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <label
+                for="rooms"
+                class="block text-sm font-medium text-gray-700 mb-1"
+                >Habitaciones</label
+              >
+              <input
+                type="number"
+                id="rooms"
+                value="3"
+                class="w-full px-4 py-2 bg-transparent border border-border-default rounded-md transition-colors duration-200 hover:border-soul-secondary focus:outline-none focus:border-soul-primary focus:ring-2 focus:ring-soul-primary/30"
+              />
+            </div>
+
+            <div>
+              <label
+                for="bathrooms"
+                class="block text-sm font-medium text-gray-700 mb-1"
+                >Baños</label
+              >
+              <input
+                type="number"
+                id="bathrooms"
+                value="2"
+                class="w-full px-4 py-2 bg-transparent border border-border-default rounded-md transition-colors duration-200 hover:border-soul-secondary focus:outline-none focus:border-soul-primary focus:ring-2 focus:ring-soul-primary/30"
+              />
+            </div>
+
+            <div>
+              <label
+                for="capacity"
+                class="block text-sm font-medium text-gray-700 mb-1"
+                >Capacidad</label
+              >
+              <input
+                type="number"
+                id="capacity"
+                value="6"
+                class="w-full px-4 py-2 bg-transparent border border-border-default rounded-md transition-colors duration-200 hover:border-soul-secondary focus:outline-none focus:border-soul-primary focus:ring-2 focus:ring-soul-primary/30"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label
+              for="description"
+              class="block text-sm font-medium text-gray-700 mb-1"
+              >Descripción</label
+            >
+            <textarea
+              id="description"
+              rows="4"
+              class="w-full px-4 py-2 bg-transparent border border-border-default rounded-md transition-colors duration-200 hover:border-soul-secondary focus:outline-none focus:border-soul-primary focus:ring-2 focus:ring-soul-primary/30"
+            ></textarea>
+          </div>
+
+          <div class="pt-4">
+            <button
+              type="submit"
+              class="w-full bg-soul-primary text-soul-bg font-bold font-sans py-3 px-4 rounded-md hover:bg-soul-primary/90 transition duration-300"
+            >
+              Guardar Propiedad
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
