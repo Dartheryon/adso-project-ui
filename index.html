@@ -19,13 +19,119 @@
 
     <link rel="manifest" href="site.webmanifest" />
     <meta name="theme-color" content="#fafafa" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: 'Nunito Sans', sans-serif;
+      }
+    </style>
   </head>
 
-  <body>
-    <!-- Add your site or application content here -->
-    <p class="text-center text-red-600">
-      Este proyecto ya tiene tailwind configurado.
-    </p>
-    <script src="js/app.js"></script>
+  <body class="bg-gray-100">
+    <section class="bg-gray-100 p-4">
+      <div class="container mx-auto">
+        <h2 class="text-2xl font-bold text-center mb-8">
+          Diseño (Alta fidelidad)
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <a
+            href="#"
+            class="block bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300"
+          >
+            <figure>
+              <img
+                src="https://placehold.co/600x400/00635D/FDFFFC?text=Pantalla+de+Login"
+                alt="Placeholder Image"
+                class="w-full h-48 object-cover"
+              />
+              <figcaption class="p-4">
+                <h3 class="font-bold">Pantalla de Login</h3>
+              </figcaption>
+            </figure>
+          </a>
+          <a
+            href="#"
+            class="block bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300"
+          >
+            <figure>
+              <img
+                src="https://placehold.co/600x400/08A4BD/FDFFFC?text=Dashboard+Propietario"
+                alt="Placeholder Image"
+                class="w-full h-48 object-cover"
+              />
+              <figcaption class="p-4">
+                <h3 class="font-bold">Dashboard Propietario</h3>
+              </figcaption>
+            </figure>
+          </a>
+          <a
+            href="#"
+            class="block bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300"
+          >
+            <figure>
+              <img
+                src="https://placehold.co/600x400/00635D/FDFFFC?text=Formulario+de+propiedad"
+                alt="Placeholder Image"
+                class="w-full h-48 object-cover"
+              />
+              <figcaption class="p-4">
+                <h3 class="font-bold">Formulario de propiedad</h3>
+              </figcaption>
+            </figure>
+          </a>
+          <a
+            href="#"
+            class="block bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300"
+          >
+            <figure>
+              <img
+                src="https://placehold.co/600x400/08A4BD/FDFFFC?text=Gestion+de+disponibilidad+y+precios"
+                alt="Placeholder Image"
+                class="w-full h-48 object-cover"
+              />
+              <figcaption class="p-4">
+                <h3 class="font-bold">Gestion de disponibilidad y precios</h3>
+              </figcaption>
+            </figure>
+          </a>
+          <a
+            href="#"
+            class="block bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300"
+          >
+            <figure>
+              <img
+                src="https://placehold.co/600x400/00635D/FDFFFC?text=Panel+Administrador"
+                alt="Placeholder Image"
+                class="w-full h-48 object-cover"
+              />
+              <figcaption class="p-4">
+                <h3 class="font-bold">Panel Administrador</h3>
+              </figcaption>
+            </figure>
+          </a>
+          <a
+            href="#"
+            class="block bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300"
+          >
+            <figure>
+              <img
+                src="https://placehold.co/600x400/08A4BD/FDFFFC?text=Pantalla+de+errores"
+                alt="Placeholder Image"
+                class="w-full h-48 object-cover"
+              />
+              <figcaption class="p-4">
+                <h3 class="font-bold">Pantalla de errores</h3>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+      </div>
+    </section>
+    <script src="./src/app.ts"></script>
   </body>
 </html>
