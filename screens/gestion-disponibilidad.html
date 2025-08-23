@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>✨ Soul / UI - Gestion de disponibilidad y precios</title>
+    <link rel="stylesheet" href="../css/tw-style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-soul-bg flex items-center justify-center min-h-screen font-sans"
+  >
+
+    <section class="relative bg-soul-bg">
+  <div class="bg-soul-secondary w-full sm:w-40 h-40 rounded-full absolute top-1 opacity-20 max-sm:right-0 sm:left-56 z-0"></div>
+  <div class="bg-soul-primary w-full sm:w-40 h-24 absolute top-0 -left-0 opacity-20 z-0"></div>
+  <div class="bg-soul-secondary w-full sm:w-40 h-24 absolute top-40 -left-0 opacity-20 z-0"></div>
+
+  <div class="w-full py-24 relative z-10 backdrop-blur-3xl">
+    <div class="w-full max-w-7xl mx-auto px-2 lg:px-8">
+      <div class="grid grid-cols-12 gap-8 max-w-4xl mx-auto xl:max-w-full">
+        <div class="col-span-12 xl:col-span-5">
+          <h2 class="font-heading text-3xl leading-tight text-text-base mb-1.5">Fechas importantes</h2>
+          <p class="text-lg font-normal text-text-base/70 mb-8">No olvides lo importante</p>
+          <div class="flex gap-5 flex-col">
+    
+            <div class="p-6 rounded-xl bg-white border border-border-default">
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center gap-2.5">
+                  <span class="w-2.5 h-2.5 rounded-full bg-soul-primary"></span>
+                  <p class="text-base font-medium text-text-base">Enero 10, 10:00 - 11:00</p>
+                </div>
+                <button class="inline-flex justify-center py-2.5 px-1 items-center gap-2 text-sm text-text-base rounded-full font-semibold shadow-xs transition hover:text-soul-primary">
+                  ⋮
+                </button>
+              </div>
+              <h6 class="text-xl leading-8 font-semibold text-text-base mb-1">Propiedad 1</h6>
+              <p class="text-base font-normal text-text-base/70">Booked - David Johnson - check in: 13:00</p>
+            </div>
+            <div class="p-6 rounded-xl bg-white border border-border-default">
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center gap-2.5">
+                  <span class="w-2.5 h-2.5 rounded-full bg-soul-secondary"></span>
+                  <p class="text-base font-medium text-text-base">Enero 13, 05:40 - 13:00</p>
+                </div>
+                <button class="inline-flex justify-center py-2.5 px-1 items-center gap-2 text-sm text-text-base rounded-full font-semibold shadow-xs transition hover:text-soul-secondary">
+                  ⋮
+                </button>
+              </div>
+              <h6 class="text-xl leading-8 font-semibold text-text-base mb-1">Propiedad 2</h6>
+              <p class="text-base font-normal text-text-base/70">Limpieza de habitacion y amenidades</p>
+            </div>
+            <div class="p-6 rounded-xl bg-white border border-border-default">
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center gap-2.5">
+                  <span class="w-2.5 h-2.5 rounded-full bg-soul-primary"></span>
+                  <p class="text-base font-medium text-text-base">Enero 16, 10:00 - 11:00</p>
+                </div>
+                <button class="inline-flex justify-center py-2.5 px-1 items-center gap-2 text-sm text-text-base rounded-full font-semibold shadow-xs transition hover:text-soul-primary">
+                  ⋮
+                </button>
+              </div>
+              <h6 class="text-xl leading-8 font-semibold text-text-base mb-1">Propiedad 2</h6>
+              <p class="text-base font-normal text-text-base/70">Booked - Julieta Serrano - check in: 13:00 </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 xl:col-span-7 px-2.5 py-5 sm:p-8 bg-gradient-to-b from-white/25 to-white xl:bg-white rounded-2xl max-xl:row-start-1">
+          <div class="flex flex-col md:flex-row gap-4 items-center justify-between mb-5">
+            <div class="flex items-center gap-4">
+              <h5 class="text-xl leading-8 font-semibold text-text-base">Enero 2025</h5>
+              <div class="flex items-center">
+                <button class="text-soul-primary p-1 rounded transition hover:bg-soul-primary hover:text-white">←</button>
+                <button class="text-soul-primary p-1 rounded transition hover:bg-soul-primary hover:text-white">→</button>
+              </div>
+            </div>
+            <div class="flex items-center rounded-md p-1 bg-soul-bg gap-px">
+              <button class="py-2.5 px-5 rounded-lg bg-soul-bg text-soul-primary text-sm font-medium transition hover:bg-soul-primary hover:text-white">Dia</button>
+              <button class="py-2.5 px-5 rounded-lg bg-soul-primary text-white text-sm font-medium transition">Semana</button>
+              <button class="py-2.5 px-5 rounded-lg bg-soul-bg text-soul-primary text-sm font-medium transition hover:bg-soul-primary hover:text-white">Mes</button>
+            </div>
+          </div>
+          <div class="border border-border-default rounded-xl">
+            <div class="grid grid-cols-7 rounded-t-3xl border-b border-border-default">
+              <div class="py-3.5 border-r border-border-default rounded-tl-xl bg-soul-bg flex items-center justify-center text-sm font-medium text-soul-primary">Dom</div>
+              <div class="py-3.5 border-r border-border-default bg-soul-bg flex items-center justify-center text-sm font-medium text-soul-primary">Lun</div>
+              <div class="py-3.5 border-r border-border-default bg-soul-bg flex items-center justify-center text-sm font-medium text-soul-primary">Mar</div>
+              <div class="py-3.5 border-r border-border-default bg-soul-bg flex items-center justify-center text-sm font-medium text-soul-primary">Mie</div>
+              <div class="py-3.5 border-r border-border-default bg-soul-bg flex items-center justify-center text-sm font-medium text-soul-primary">Jue</div>
+              <div class="py-3.5 border-r border-border-default bg-soul-bg flex items-center justify-center text-sm font-medium text-soul-primary">Vie</div>
+              <div class="py-3.5 rounded-tr-xl bg-soul-bg flex items-center justify-center text-sm font-medium text-soul-primary">Sab</div>
+            </div>
+            <div class="grid grid-cols-7 rounded-b-xl">
+              <div class="flex aspect-square p-3.5 bg-white border-r border-b border-border-default transition hover:bg-soul-bg cursor-pointer">
+                <span class="text-xs font-semibold text-text-base">1</span>
+              </div>
+              <div class="flex aspect-square p-3.5 bg-white border-r border-b border-border-default transition hover:bg-soul-bg cursor-pointer">
+                <span class="text-xs font-semibold text-text-base">2</span>
+              </div>
+              <div class="flex aspect-square p-3.5 bg-white border-r border-b border-border-default transition hover:bg-soul-bg cursor-pointer">
+                <span class="text-xs font-semibold text-text-base">3</span>
+              </div>
+              <div class="flex aspect-square p-3.5 bg-white border-r border-b border-border-default transition hover:bg-soul-bg cursor-pointer">
+                <span class="text-xs font-semibold text-text-base">4</span>
+              </div>
+              <div class="flex aspect-square p-3.5 bg-white border-r border-b border-border-default transition hover:bg-soul-bg cursor-pointer">
+                <span class="text-xs font-semibold text-text-base">5</span>
+              </div>
+              <div class="flex aspect-square p-3.5 bg-white border-r border-b border-border-default transition hover:bg-soul-bg cursor-pointer">
+                <span class="text-xs font-semibold text-text-base">6</span>
+              </div>
+              <div class="flex aspect-square p-3.5 bg-white border-r border-b border-border-default transition hover:bg-soul-bg cursor-pointer">
+                <span class="text-xs font-semibold text-text-base">7</span>
+              </div>
+              <div class="flex aspect-square p-3.5 bg-white border-r border-b border-border-default transition hover:bg-soul-bg cursor-pointer">
+                <span class="text-xs font-semibold text-text-base">8</span>
+              </div>
+              <div class="flex aspect-square p-3.5 bg-white border-r border-b border-border-default transition hover:bg-soul-bg cursor-pointer">
+                <span class="text-xs font-semibold text-text-base">9</span>
+              </div>
+              <div class="flex aspect-square p-3.5 bg-white border-r border-b border-border-default transition hover:bg-soul-bg cursor-pointer">
+                <span class="text-xs font-semibold sm:text-white sm:w-6 sm:h-6 rounded-full sm:flex items-center justify-center sm:bg-soul-primary">10</span>
+              </div>
+              <div class="flex aspect-square p-3.5 bg-white border-r border-b border-border-default transition hover:bg-soul-bg cursor-pointer">
+                <span class="text-xs font-semibold text-text-base">11</span>
+              </div>
+              <div class="flex aspect-square p-3.5 bg-white border-r border-b border-border-default transition hover:bg-soul-bg cursor-pointer">
+                <span class="text-xs font-semibold text-text-base">12</span>
+              </div>
+              <div class="flex aspect-square p-3.5 bg-white border-r border-b border-border-default transition hover:bg-soul-bg cursor-pointer">
+                <span class="text-xs font-semibold sm:text-white sm:w-6 sm:h-6 rounded-full sm:flex items-center justify-center sm:bg-soul-secondary">13</span>
+              </div>
+              <div class="flex aspect-square p-3.5 bg-white border-r border-b border-border-default transition hover:bg-soul-bg cursor-pointer">
+                <span class="text-xs font-semibold text-text-base">14</span>
+              </div>
+              <div class="flex aspect-square p-3.5 bg-white border-r border-b border-border-default transition hover:bg-soul-bg cursor-pointer">
+                <span class="text-xs font-semibold text-text-base">15</span>
+              </div>
+              <div class="flex aspect-square p-3.5 bg-white border-r border-b border-border-default transition hover:bg-soul-bg cursor-pointer">
+                <span class="text-xs font-semibold sm:text-white sm:w-6 sm:h-6 rounded-full sm:flex items-center justify-center sm:bg-soul-primary">16</span>
+              </div>
+              <div class="flex aspect-square p-3.5 bg-white border-r border-b border-border-default transition hover:bg-soul-bg cursor-pointer">
+                <span class="text-xs font-semibold text-text-base">17</span>
+              </div>
+              <div class="flex aspect-square p-3.5 bg-white border-r border-b border-border-default transition hover:bg-soul-bg cursor-pointer">
+                <span class="text-xs font-semibold text-text-base">18</span>
+              </div>
+              <div class="flex aspect-square p-3.5 bg-white border-r border-b border-border-default transition hover:bg-soul-bg cursor-pointer">
+                <span class="text-xs font-semibold text-text-base">19</span>
+              </div>
+              <div class="flex aspect-square p-3.5 bg-white border-r border-b border-border-default transition hover:bg-soul-bg cursor-pointer">
+                <span class="text-xs font-semibold text-text-base">20</span>
+              </div>
+              <div class="flex aspect-square p-3.5 bg-white border-r border-b border-border-default transition hover:bg-soul-bg cursor-pointer">
+                <span class="text-xs font-semibold text-text-base">21</span>
+              </div>
+              <div class="flex aspect-square p-3.5 bg-white border-r border-b border-border-default transition hover:bg-soul-bg cursor-pointer">
+                <span class="text-xs font-semibold text-text-base">22</span>
+              </div>
+              <div class="flex aspect-square p-3.5 bg-white border-r border-b border-border-default transition hover:bg-soul-bg cursor-pointer">
+                <span class="text-xs font-semibold text-text-base">23</span>
+              </div>
+              <div class="flex aspect-square p-3.5 bg-white border-r border-b border-border-default transition hover:bg-soul-bg cursor-pointer">
+                <span class="text-xs font-semibold text-text-base">24</span>
+              </div>
+              <div class="flex aspect-square p-3.5 bg-white border-r border-b border-border-default transition hover:bg-soul-bg cursor-pointer">
+                <span class="text-xs font-semibold text-text-base">25</span>
+              </div>
+              <div class="flex aspect-square p-3.5 bg-white border-r border-b border-border-default transition hover:bg-soul-bg cursor-pointer">
+                <span class="text-xs font-semibold text-text-base">26</span>
+              </div>
+              <div class="flex aspect-square p-3.5 bg-white border-r border-b border-border-default transition hover:bg-soul-bg cursor-pointer">
+                <span class="text-xs font-semibold text-text-base">27</span>
+              </div>
+              <div class="flex aspect-square p-3.5 bg-white border-r border-b border-border-default transition hover:bg-soul-bg cursor-pointer">
+                <span class="text-xs font-semibold text-text-base">28</span>
+              </div>
+              <div class="flex aspect-square p-3.5 bg-white border-r border-b border-border-default transition hover:bg-soul-bg cursor-pointer">
+                <span class="text-xs font-semibold text-text-base">29</span>
+              </div>
+              <div class="flex aspect-square p-3.5 bg-white border-r border-b border-border-default transition hover:bg-soul-bg cursor-pointer">
+                <span class="text-xs font-semibold text-text-base">30</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>                                      
+  </body>
+</html>
